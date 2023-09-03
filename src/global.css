@@ -1,0 +1,49 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-yellow: #f6cd25;
+  --theme-red: #dc163b;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Geo";
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+button {
+  background-color: var(--theme-red);
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-family: "Poppins";
+}
+
+.blogs {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px
+}
